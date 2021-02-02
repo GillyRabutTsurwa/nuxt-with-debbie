@@ -1,8 +1,10 @@
-fetch shows everything except the async data (via the api call) while it is fetching.
-fetching we can put a loading state but I don't think async data has one. TODO: verify
+Ok. This one was cool, et il aurait pu me donner une solution pour mon site web portfolio. 
 
-three fetchStates: pending,error,timestamp
+Tout ce qu'il faut faire c'est ajouter le mot Lazy avant le composant: le composant ```<Dog/>``` deviendra ```<LazyDog>```
 
-J'ai appris aussi à changer la vitesse de l'internet sous l'onglet "Network" dans Chrome dev tools
+L'evidence de lazy loading s'affiche sur les onglets Network/XHR et Network/JS.
+for XHR, the the data in our component will be fetched only after clicking the button (the way our component is designed. We use a v-if to show our lazy component only if our show value becomes true. This value is switched to true by clicking the show mountains button)
 
-async data does not show anything on the page until all data is received.
+this is more visible in XHR/JS. when lazy loading, we don't see our Javascript for our component until the button is clicked. I'll come back to this later.
+
+TODO: check if this works for manually imported components as well
