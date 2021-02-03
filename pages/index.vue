@@ -6,12 +6,9 @@
         fetch
       </h1>
       <div class="links">
-        <nuxt-link to="/mountains" class="button--green">
+        <NuxtLink to="/mountains" class="button--green">
           Look @ Mountains
-        </nuxt-link>
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank" rel="noopener noreferrer" class="button--grey">
-          GitHub
-        </a>
+        </NuxtLink>
       </div>
     </div>
   </div>
