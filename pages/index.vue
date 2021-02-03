@@ -3,8 +3,13 @@
     <div>
       <Logo />
       <h1 class="title">
-        fetch
+        Using Fetch @ Component Level
       </h1>
+      <div class="links">
+        <NuxtLink to="/about" class="button--green">
+          About Page
+        </NuxtLink>
+      </div>
       <div class="links">
         <NuxtLink to="/mountains" class="button--green">
           Look @ Mountains
