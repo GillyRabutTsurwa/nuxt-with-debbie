@@ -1,23 +1,9 @@
-accessing nested directories with nested component
-* making the folder, puting the word of the folder in front of the component file name and calling it as so. I do this with the work nested
+dynamic pages (tu en sais)
+for dynamic pages, we add an underscore. we already know this.
 
-second: like this. let's say we wanted to access the components under a folder named base without having to modify the name of our component (car ce nom pourraient devenir longs et bizzares).
+NOTE: DO NOT BE THROWN OFF. slug and id are exactly the same concept.
+la difference que je vois, possiblement" ce que slug peut être une chaine des lettres et id et reservé seulement aux chiffres. Si j'ai tort, je vais revenir pour changer les notes, but I'm confident voila ce qui se passe.
 
-En fait ceci, evidemment, dans notre nuxt.config.js
 
-```js
-components: {
-    dirs: [
-        "~/components", {
-            path: "~/components/base,
-            prefix: "Base"
-        }
-    ]
-}
-```
-
-Avec ceci, chaque fichier composant trouver dans le dossier base, qui est sous celui de components, sera automatiquement "prefixed" avec Base. Il nous faudra plus le faire manuellement comme auparavant
-
-NOTE: TO access the mountains that are using the automatic nested way, via the code above, go the page ```MountainsDeux```
-
-Success. All works well
+other notes
+removed the manually nested folder component structure and doing the automatic configured one

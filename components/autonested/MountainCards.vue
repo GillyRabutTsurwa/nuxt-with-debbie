@@ -13,9 +13,10 @@
         <div class="uppercase tracking-wide text-sm text-indigo-600 font-bold">
           {{currentMountain.continent}}
         </div>
-        <a href="#" class="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:underline">
+        <!-- NEWIMPORTANTNOTE: c'est comme je fais comme d'hab something.id. ensuite je vais acceder ce id ou "slug" dans un autre page pour l'utiliser. je fais exactement le meme chose dans mon projet de pokedex -->
+        <NuxtLink v-bind:to="`/mountains/${currentMountain.slug}`" class="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:underline">
           {{currentMountain.title}}
-        </a>
+        </NuxtLink>
         <p class="mt-2 text-gray-600">
           {{currentMountain.description}}
         </p>
