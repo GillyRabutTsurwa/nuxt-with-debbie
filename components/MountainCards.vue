@@ -26,14 +26,6 @@
 
 <script>
 export default {
-  // nout using anymore
-  // props: {
-  //   mountainObj: {
-  //     type: Object,
-  //     required: true,
-  //     default: () => {},
-  //   },
-  // },
   data() {
     return {
       mountainsArr: [],
