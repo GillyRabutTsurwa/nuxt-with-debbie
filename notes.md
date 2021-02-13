@@ -1,5 +1,23 @@
-NOTE: Once again, the file structure changed, mais l'idée c'est que l'on peut utiliser fetch partout. Il est flexible
+accessing nested directories with nested component
+* making the folder, puting the word of the folder in front of the component file name and calling it as so. I do this with the work nested
 
-fetch allows us to fetch (no pun intended) data at component level, on top of page level. AsyncData is page level only
+second: like this. let's say we wanted to access the components under a folder named base without having to modify the name of our component (car ce nom pourraient devenir longs et bizzares).
 
-We can fetch our MountainCards in any of our pages and it just works. Again, AsyncData is restricted to pages only.
+En fait ceci, evidemment, dans notre nuxt.config.js
+
+```js
+components: {
+    dirs: [
+        "~/components", {
+            path: "~/components/base,
+            prefix: "Base"
+        }
+    ]
+}
+```
+
+Avec ceci, chaque fichier composant trouver dans le dossier base, qui est sous celui de components, sera automatiquement "prefixed" avec Base. Il nous faudra plus le faire manuellement comme auparavant
+
+NOTE: TO access the mountains that are using the automatic nested way, via the code above, go the page ```MountainsDeux```
+
+Success. All works well

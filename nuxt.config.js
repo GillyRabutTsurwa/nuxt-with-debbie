@@ -21,7 +21,19 @@ export default {
   //NOTEIMPORTANT: ces deux lignes-dessous rendre possible cette fonctionalité
   // c'est génial
   // Auto import components (https://go.nuxtjs.dev/config-components)
-  components: true,
+
+  // components: true, on n'en a plus besoin parce que ceci...
+  // NEWNOTE: This is really really cool
+  components: {
+    dirs: [
+      // ....fait la même chose que ceci. dirs: ["~/components] is the same as components = true
+      "~/components",
+      {
+        path: "~/components/autonested",
+        prefix: "AutoNested"
+      }
+    ]
+  },
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
