@@ -37,6 +37,7 @@ export default {
 
     // au lieu de celui dessûs (refreshing my javascript here)
     const { params, $axios } = context;
+    console.log(params);
 
     const mountain = await $axios.$get(
       `https://api.nuxtjs.dev/mountains/${params.slug}`
