@@ -1,4 +1,5 @@
 <template>
+  <!-- NOTE: This component is the equivalent of Debbie's ProductCard component in the video -->
   <div>
     <button @click="$fetch" class="text-sm bg-blue-500 hover:bg-blue-700 text-white font-bold p-2 rounded-full mb-4">Refresh</button>
 
