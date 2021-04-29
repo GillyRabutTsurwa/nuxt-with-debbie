@@ -35,13 +35,15 @@ export default {
     // const $axios = context.$axios;
     // console.log($axios);
 
-    // au lieu de celui dessûs (refreshing my javascript here)
+    // au lieu de celui dessûs, we will use destructuring (refreshing my javascript here)
+    // we are accessing params from MountainCards.vue, which gives us access to the slug (think of it like an id)
+    // we are also fetching axios from the context object
     const { params, $axios } = context;
+    console.log(context); // to get a better idea what is in this context object, specifically the params property
     console.log(params);
 
-    const mountain = await $axios.$get(
-      `https://api.nuxtjs.dev/mountains/${params.slug}`
-    );
+    // to reiterate, this params.slug is what we are getting from MountainCards.vue in our NuxtLink
+    const mountain = await $axios.$get(`https://api.nuxtjs.dev/mountains/${params.slug}`);
     console.log(mountain);
     return {
       mountain: mountain,

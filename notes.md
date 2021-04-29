@@ -13,5 +13,10 @@ So if we name our page _mountains, it will be params.mountains.
 At the moment we named it _slug, so it is params.slug.
 
 
-other notes
-removed the manually nested folder component structure that we used in the previous repository and left the automatically configured one 
+#### Attempt to summarise the notes above
+- this is the exact same functionality you are using in your **Nuxt Pokedex App**. don't overthink it.
+- it is an easy way to make our pages dynamic using data from our API
+- think of slug like an id. so far i do not see much difference between their purposes
+- we are defining the the data to use to make the page dynamic in our MountainCards.vue page in our NuxtLink
+- then we are using that data (again, called the slug) to make our dynamic page in pages/_slug/index.vue
+- the _ before the directory name under pages indicates that the page is dynamique.
