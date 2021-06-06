@@ -1,9 +1,20 @@
-dynamic pages (tu en sais)
-for dynamic pages, we add an underscore. we already know this.
+[nuxt-editing-ports-docs]: https://nuxtjs.org/docs/2.x/features/configuration#edit-host-and-port
+### Editing Nuxt Ports (and Hosts if Needed)
+- for one reason or another (main one being the port is taken) we need to define our own port for our nuxt application
+- this is very good [documentation][nuxt-editing-ports-docs] on how to do this
+  - to summarise, it is not wise to do this in your nuxt config file
+  - that looks something like this:
+  - instead, it is advised to define this in your package.json file
 
-NOTE: DO NOT BE THROWN OFF. slug and id are exactly the same concept.
-la difference que je vois, possiblement" ce que slug peut être une chaine des lettres et id et reservé seulement aux chiffres. Si j'ai tort, je vais revenir pour changer les notes, but I'm confident voila ce qui se passe.
-
-
-other notes
-removed the manually nested folder component structure and doing the automatic configured one
+     ```javascript 
+     "scripts": {
+        "dev:host": "nuxt --hostname '0' --port 8000"
+    }
+    ```
+  - or when you start up your dev environment in your terminal
+  - like this: 
+    
+    ```javascript 
+    HOST=0 PORT=8000 npm run dev
+    ```
+- i am not touching on the hostname configuration ettiquete, but the same link previously included can be consulted to learn about it.

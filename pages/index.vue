@@ -3,7 +3,7 @@
     <div>
       <Logo />
       <h1 class="title">
-        Using Fetch @ Component Level
+        Editing Nuxt Ports
       </h1>
       <div class="links">
         <NuxtLink to="/about" class="button--green">
@@ -39,8 +39,7 @@ export default {};
 }
 
 .title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;
