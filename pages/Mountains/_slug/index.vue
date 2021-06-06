@@ -29,18 +29,19 @@
 <script>
 export default {
   async asyncData(context) {
-    // console.log(context);
-    // const params = context.params;
-    // console.log(params);
-    // const $axios = context.$axios;
-    // console.log($axios);
+    /*
+    console.log(context);
+    const params = context.params;
+    console.log(params);
+    console.log(params.slug);
+    const $axios = context.$axios;
+    console.log($axios);
+    */
 
     // au lieu de celui dessûs (refreshing my javascript here)
     const { params, $axios } = context;
 
-    const mountain = await $axios.$get(
-      `https://api.nuxtjs.dev/mountains/${params.slug}`
-    );
+    const mountain = await $axios.$get(`https://api.nuxtjs.dev/mountains/${params.slug}`);
     console.log(mountain);
     return {
       mountain: mountain,
