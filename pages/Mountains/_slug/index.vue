@@ -45,10 +45,6 @@ export default {
     console.log(context); // to get a better idea what is in this context object, specifically the params property
     console.log(params);
 
-<<<<<<< HEAD
-=======
-    // to reiterate, this params.slug is what we are getting from MountainCards.vue in our NuxtLink
->>>>>>> 26ba4037c71bb091c167655501ab143d2658e680
     const mountain = await $axios.$get(`https://api.nuxtjs.dev/mountains/${params.slug}`);
     console.log(mountain);
     return {
