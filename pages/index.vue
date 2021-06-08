@@ -6,13 +6,13 @@
         Editing Nuxt Ports
       </h1>
       <div class="links">
-        <NuxtLink to="/about" class="button--green">
-          About Page
+        <NuxtLink to="/axios" class="button--green">
+          Axios
         </NuxtLink>
       </div>
       <div class="links">
-        <NuxtLink to="/mountains" class="button--green">
-          Look @ Mountains
+        <NuxtLink to="/fetch" class="button--green">
+          Fetch
         </NuxtLink>
       </div>
     </div>

@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto">
     <div class="relative py-16 bg-white overflow-hidden">
-      <NuxtLink to="/mountains">Back</NuxtLink>
+      <NuxtLink to="/fetch">Back</NuxtLink>
       <div class="relative px-4 sm:px-6 lg-px-8">
         <div class="text-lg max-w-prose mx-auto mb-6">
           <p class="text-base text-center leading-6 text-indigo-600 font-semibold tracking-wide uppercase">
@@ -38,12 +38,8 @@ export default {
     console.log($axios);
     */
 
-    // au lieu de celui dessûs, we will use destructuring (refreshing my javascript here)
-    // we are accessing params from MountainCards.vue, which gives us access to the slug (think of it like an id)
-    // we are also fetching axios from the context object
+    // au lieu de celui dessûs (refreshing my javascript here)
     const { params, $axios } = context;
-    console.log(context); // to get a better idea what is in this context object, specifically the params property
-    console.log(params);
 
     const mountain = await $axios.$get(`https://api.nuxtjs.dev/mountains/${params.slug}`);
     console.log(mountain);
