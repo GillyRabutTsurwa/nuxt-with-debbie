@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto">
     <div class="relative py-16 bg-white overflow-hidden">
-      <NuxtLink to="/mountains">Back</NuxtLink>
+      <NuxtLink to="/fetch">Back</NuxtLink>
       <div class="relative px-4 sm:px-6 lg-px-8">
         <div class="text-lg max-w-prose mx-auto mb-6">
           <p class="text-base text-center leading-6 text-indigo-600 font-semibold tracking-wide uppercase">
